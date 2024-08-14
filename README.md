@@ -1,5 +1,6 @@
 # Wall Follower agent
-Goal: Develop 2 robotic agents to command a simulated mobile robot. The objective of this challenge is to control the movement of a robot through an unknown closed path defined by a wall. The robot should follow the wall, keeping the wall on the right of the robot and not deviating too much from the wall. 
+Goal: Develop 2 robotic agents to command a simulated mobile robot. The objective of this challenge is to control the movement of a robot through an unknown closed path defined by a wall.   
+The robot should follow the wall, keeping the wall on the right of the robot and not deviating too much from the wall. 
 
 ## Install
 
@@ -15,18 +16,31 @@ sudo apt-get install build-essential cmake qtmultimedia5-dev
 
 Then in the repository base dir, execute:
 ```bash
+cd ciberRatoTools
 mkdir build
 cd build
 cmake ..
 make
+cd ..
 ```
 
-## Run agent
+For the Machine Learning agent install:
+```bash
+pip install stable-baselines3
+```
+
+## Run agent 1
 
 To run the simulator, the agent and Viewer, execute (at the repository ciberRatoTools):
 ```bash
-cd ciberRatoTools
 ./start
+```
+
+## Run agent 2
+
+To run the simulator, the agent and Viewer, execute (at the repository ciberRatoTools):
+```bash
+./start2
 ```
 
 Press start on the Simulator after connecting to the viewer
